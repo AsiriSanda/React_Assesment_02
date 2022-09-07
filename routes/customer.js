@@ -1,8 +1,6 @@
 const express = require('express')
 const mysql = require('mysql')
 const db = require('../config/db.config')
-const {Query} = require("mysql/lib/protocol/sequences");
-const {ER_ABORTING_CONNECTION} = require("mysql/lib/protocol/constants/errors");
 
 const connection = mysql.createConnection(db.database)
 connection.connect(function(err)  {
